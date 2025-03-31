@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d3360841155f945128140263bfc29cd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d3360841155f945128140263bfc29cd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d3360841155f945128140263bfc29cd = L.map(
+                "map_2d3360841155f945128140263bfc29cd",
+                {
+                    center: [24.265432, 121.187712],
+                    crs: L.CRS.EPSG3857,
+                    maxBounds: [[21.928963, 119.083484], [25.155479, 122.842401]],
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_03a5da4ac87fadee96595a81b8736db5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_03a5da4ac87fadee96595a81b8736db5.addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var tile_layer_7ed056f8b389ec680731b247d057920c = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google Maps", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7ed056f8b389ec680731b247d057920c.addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var marker_1fc4734d052bfcc66f362720aa68b1c7 = L.marker(
+                [22.631726705757213, 120.27420644132583],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_2e1c61b32d3d44051e356858f4bda1f7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc00\u003c/div\u003e"});
+            marker_1fc4734d052bfcc66f362720aa68b1c7.setIcon(div_icon_2e1c61b32d3d44051e356858f4bda1f7);
+        
+    
+        var popup_ce4a2a3c5e844fd96bf9f350f85278d7 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_945970990c40009bdbfec6946607c7f4 = $(`<div id="html_945970990c40009bdbfec6946607c7f4" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>白鼻心 Masked Palm Civet</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/6d46c86f418ff560392166088e7dfdaa.jpg?itok=kJ00OQMY" alt="白鼻心" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 高雄市鼓山區<br>     <p style='font-size: 16px;'>The masked palm civet is a viverrid species native to the Indian subcontinent and Southeast Asia. It has been listed as least concern on the IUCN Red List since 2008 as it occurs in many protected areas.The Formosan masked palm civet has a black head with a distinct white stripe from the forehead to the nose. Their claws are retractable, making it a tree-climbing master. Their anal glands can release foul-smelling scent to scare away the predators. The natural habitats are depleting due to many human and environmental reasons.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_ce4a2a3c5e844fd96bf9f350f85278d7.setContent(html_945970990c40009bdbfec6946607c7f4);
+            
+        
+
+        marker_1fc4734d052bfcc66f362720aa68b1c7.bindPopup(popup_ce4a2a3c5e844fd96bf9f350f85278d7)
+        ;
+
+        
+    
+    
+            var marker_77a86be820b4ff1ca7626c7b25964242 = L.marker(
+                [23.4295022045755, 120.72937031828108],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_8aa4650c0ad6bb3916c6cf1083ff87b3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc00\u003c/div\u003e"});
+            marker_77a86be820b4ff1ca7626c7b25964242.setIcon(div_icon_8aa4650c0ad6bb3916c6cf1083ff87b3);
+        
+    
+        var popup_ed45b253c1e16e2c08fba8d62b7ca0d1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_61f0212af1c1b2156eb47cfe77144ddb = $(`<div id="html_61f0212af1c1b2156eb47cfe77144ddb" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>白鼻心 Masked Palm Civet</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/6d46c86f418ff560392166088e7dfdaa.jpg?itok=kJ00OQMY" alt="白鼻心" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>The masked palm civet is a viverrid species native to the Indian subcontinent and Southeast Asia. It has been listed as least concern on the IUCN Red List since 2008 as it occurs in many protected areas.The Formosan masked palm civet has a black head with a distinct white stripe from the forehead to the nose. Their claws are retractable, making it a tree-climbing master. Their anal glands can release foul-smelling scent to scare away the predators. The natural habitats are depleting due to many human and environmental reasons.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_ed45b253c1e16e2c08fba8d62b7ca0d1.setContent(html_61f0212af1c1b2156eb47cfe77144ddb);
+            
+        
+
+        marker_77a86be820b4ff1ca7626c7b25964242.bindPopup(popup_ed45b253c1e16e2c08fba8d62b7ca0d1)
+        ;
+
+        
+    
+    
+            var marker_0450f01d217158746705b116ed039326 = L.marker(
+                [22.200044529961875, 120.79982700657902],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_42e437388b7ba687d7ce13e43496887e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc00\u003c/div\u003e"});
+            marker_0450f01d217158746705b116ed039326.setIcon(div_icon_42e437388b7ba687d7ce13e43496887e);
+        
+    
+        var popup_f4018b896b03b99e73c50acac30ccae5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ba4a43a9bcea9b2d0f315c5c9fbf89b5 = $(`<div id="html_ba4a43a9bcea9b2d0f315c5c9fbf89b5" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>白鼻心 Masked Palm Civet</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/6d46c86f418ff560392166088e7dfdaa.jpg?itok=kJ00OQMY" alt="白鼻心" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 屏東縣獅子鄉<br>     <p style='font-size: 16px;'>The masked palm civet is a viverrid species native to the Indian subcontinent and Southeast Asia. It has been listed as least concern on the IUCN Red List since 2008 as it occurs in many protected areas.The Formosan masked palm civet has a black head with a distinct white stripe from the forehead to the nose. Their claws are retractable, making it a tree-climbing master. Their anal glands can release foul-smelling scent to scare away the predators. The natural habitats are depleting due to many human and environmental reasons.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_f4018b896b03b99e73c50acac30ccae5.setContent(html_ba4a43a9bcea9b2d0f315c5c9fbf89b5);
+            
+        
+
+        marker_0450f01d217158746705b116ed039326.bindPopup(popup_f4018b896b03b99e73c50acac30ccae5)
+        ;
+
+        
+    
+    
+            var marker_4a529b15e1af1fb8ca28667dcd1b95c9 = L.marker(
+                [24.599788262805212, 120.71994538772528],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_9e161c6f059be9f6b3935c2a2d70e958 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc00\u003c/div\u003e"});
+            marker_4a529b15e1af1fb8ca28667dcd1b95c9.setIcon(div_icon_9e161c6f059be9f6b3935c2a2d70e958);
+        
+    
+        var popup_7ed60a03aad59889524bf3d4e37dc134 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_120c59287f1e0e66d54b8c4f235f34cc = $(`<div id="html_120c59287f1e0e66d54b8c4f235f34cc" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>白鼻心 Masked Palm Civet</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/6d46c86f418ff560392166088e7dfdaa.jpg?itok=kJ00OQMY" alt="白鼻心" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 苗栗縣後龍鎮<br>     <p style='font-size: 16px;'>The masked palm civet is a viverrid species native to the Indian subcontinent and Southeast Asia. It has been listed as least concern on the IUCN Red List since 2008 as it occurs in many protected areas.The Formosan masked palm civet has a black head with a distinct white stripe from the forehead to the nose. Their claws are retractable, making it a tree-climbing master. Their anal glands can release foul-smelling scent to scare away the predators. The natural habitats are depleting due to many human and environmental reasons.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_7ed60a03aad59889524bf3d4e37dc134.setContent(html_120c59287f1e0e66d54b8c4f235f34cc);
+            
+        
+
+        marker_4a529b15e1af1fb8ca28667dcd1b95c9.bindPopup(popup_7ed60a03aad59889524bf3d4e37dc134)
+        ;
+
+        
+    
+    
+            var marker_13ebd5de0dc34a9d491ff472b168274d = L.marker(
+                [23.614443367285556, 121.38983357952506],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_314695516ce18d83e8121654f1d3f56a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc39\u003c/div\u003e"});
+            marker_13ebd5de0dc34a9d491ff472b168274d.setIcon(div_icon_314695516ce18d83e8121654f1d3f56a);
+        
+    
+        var popup_3de0427507ad2f2867ced24f9c141e4c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d37eb697561d656f686a88f65335337d = $(`<div id="html_d37eb697561d656f686a88f65335337d" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣刺鼠 Coxing's White-Bellied Rat</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/a964933481ad59419928e51ba3441119.jpg?itok=XSQCcAQJ" alt="臺灣刺鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣光復鄉<br>     <p style='font-size: 16px;'>Coxing's white-bellied rat is the species was first described by Robert Swinhoe in 1864 and is endemic to Taiwan. It occurs in broad-leaf forests and their edges and in scrub. It is more common at elevations below 1,300 m but can be found up to 2,000 m.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_3de0427507ad2f2867ced24f9c141e4c.setContent(html_d37eb697561d656f686a88f65335337d);
+            
+        
+
+        marker_13ebd5de0dc34a9d491ff472b168274d.bindPopup(popup_3de0427507ad2f2867ced24f9c141e4c)
+        ;
+
+        
+    
+    
+            var marker_34f4cbd491534ece7512c04e36454c99 = L.marker(
+                [24.270290268327997, 121.73940157389647],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_7f959a2775648d1274db594e857d69f3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc39\u003c/div\u003e"});
+            marker_34f4cbd491534ece7512c04e36454c99.setIcon(div_icon_7f959a2775648d1274db594e857d69f3);
+        
+    
+        var popup_c132292f23868a7a5f55007cc0e8c64d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_07b0d7a2a17c5dbc99efbbc7ebc50f54 = $(`<div id="html_07b0d7a2a17c5dbc99efbbc7ebc50f54" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣刺鼠 Coxing's White-Bellied Rat</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/a964933481ad59419928e51ba3441119.jpg?itok=XSQCcAQJ" alt="臺灣刺鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣秀林鄉<br>     <p style='font-size: 16px;'>Coxing's white-bellied rat is the species was first described by Robert Swinhoe in 1864 and is endemic to Taiwan. It occurs in broad-leaf forests and their edges and in scrub. It is more common at elevations below 1,300 m but can be found up to 2,000 m.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_c132292f23868a7a5f55007cc0e8c64d.setContent(html_07b0d7a2a17c5dbc99efbbc7ebc50f54);
+            
+        
+
+        marker_34f4cbd491534ece7512c04e36454c99.bindPopup(popup_c132292f23868a7a5f55007cc0e8c64d)
+        ;
+
+        
+    
+    
+            var marker_41141532820a238048bfd9a5187055b4 = L.marker(
+                [24.359842555759275, 121.77910252026537],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_0cbd201fe66f5ead14e1c22b93a82cf7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc39\u003c/div\u003e"});
+            marker_41141532820a238048bfd9a5187055b4.setIcon(div_icon_0cbd201fe66f5ead14e1c22b93a82cf7);
+        
+    
+        var popup_b1f03999d5c6c2f938ccbfb23cc689b4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f6e911b9cdedecb9fd217cecfe4cc486 = $(`<div id="html_f6e911b9cdedecb9fd217cecfe4cc486" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣刺鼠 Coxing's White-Bellied Rat</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/a964933481ad59419928e51ba3441119.jpg?itok=XSQCcAQJ" alt="臺灣刺鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 宜蘭縣南澳鄉<br>     <p style='font-size: 16px;'>Coxing's white-bellied rat is the species was first described by Robert Swinhoe in 1864 and is endemic to Taiwan. It occurs in broad-leaf forests and their edges and in scrub. It is more common at elevations below 1,300 m but can be found up to 2,000 m.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_b1f03999d5c6c2f938ccbfb23cc689b4.setContent(html_f6e911b9cdedecb9fd217cecfe4cc486);
+            
+        
+
+        marker_41141532820a238048bfd9a5187055b4.bindPopup(popup_b1f03999d5c6c2f938ccbfb23cc689b4)
+        ;
+
+        
+    
+    
+            var marker_0469440232e0252c670c39507ecd8e4c = L.marker(
+                [24.22510225403733, 120.8860918753922],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_087950895266c9a2a288235481e10d43 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc39\u003c/div\u003e"});
+            marker_0469440232e0252c670c39507ecd8e4c.setIcon(div_icon_087950895266c9a2a288235481e10d43);
+        
+    
+        var popup_be736944b67b175df7dfe4090b658373 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_737dc21845fde3b76cd5e7578b2396d2 = $(`<div id="html_737dc21845fde3b76cd5e7578b2396d2" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣刺鼠 Coxing's White-Bellied Rat</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/a964933481ad59419928e51ba3441119.jpg?itok=XSQCcAQJ" alt="臺灣刺鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市東勢區<br>     <p style='font-size: 16px;'>Coxing's white-bellied rat is the species was first described by Robert Swinhoe in 1864 and is endemic to Taiwan. It occurs in broad-leaf forests and their edges and in scrub. It is more common at elevations below 1,300 m but can be found up to 2,000 m.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_be736944b67b175df7dfe4090b658373.setContent(html_737dc21845fde3b76cd5e7578b2396d2);
+            
+        
+
+        marker_0469440232e0252c670c39507ecd8e4c.bindPopup(popup_be736944b67b175df7dfe4090b658373)
+        ;
+
+        
+    
+    
+            var marker_96f0376384fcea7a58c63dbdd16e21f2 = L.marker(
+                [23.469329357596223, 120.8196286284347],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_27fcce031c0b66d4ba701a6c68fb12db = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_96f0376384fcea7a58c63dbdd16e21f2.setIcon(div_icon_27fcce031c0b66d4ba701a6c68fb12db);
+        
+    
+        var popup_e6a3948e4616e8f0d8ccf6edf6817eb0 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_cbefe2a6866da08920bf5b8d0ea36104 = $(`<div id="html_cbefe2a6866da08920bf5b8d0ea36104" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣山羌 Formosan Muntjac</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/999994c175cba7471ab1a827effae27d.jpg?itok=5N6ISGXu" alt="臺灣山羌" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>The Formosan Mmuntjac is one of three deer species native to Taiwan. It is a small member of the deer family, with a body length of about 47-70 cm, weighing around 5-12 kg.The back of its body is dark yellow, while the upper chest and sides are gray-brown. Its limbs are dark brown, and the sides of the head, neck, throat, and lower chest are yellowish-brown. Females do not have antlers, while males have a pair of simple, forked antlers with small ridges in front of the antler base.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_e6a3948e4616e8f0d8ccf6edf6817eb0.setContent(html_cbefe2a6866da08920bf5b8d0ea36104);
+            
+        
+
+        marker_96f0376384fcea7a58c63dbdd16e21f2.bindPopup(popup_e6a3948e4616e8f0d8ccf6edf6817eb0)
+        ;
+
+        
+    
+    
+            var marker_b9d5d866e7ad593b15d26d5a21e718c4 = L.marker(
+                [22.260860860873553, 120.84047859948795],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_d864fdbfa2e3072ab5f6f8688e3bc80d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_b9d5d866e7ad593b15d26d5a21e718c4.setIcon(div_icon_d864fdbfa2e3072ab5f6f8688e3bc80d);
+        
+    
+        var popup_1156b289e7c50f79fd94886d179a7151 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3494b4024ff0dcce0bfdd7b93939928e = $(`<div id="html_3494b4024ff0dcce0bfdd7b93939928e" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣山羌 Formosan Muntjac</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/999994c175cba7471ab1a827effae27d.jpg?itok=5N6ISGXu" alt="臺灣山羌" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台東縣達仁鄉<br>     <p style='font-size: 16px;'>The Formosan Mmuntjac is one of three deer species native to Taiwan. It is a small member of the deer family, with a body length of about 47-70 cm, weighing around 5-12 kg.The back of its body is dark yellow, while the upper chest and sides are gray-brown. Its limbs are dark brown, and the sides of the head, neck, throat, and lower chest are yellowish-brown. Females do not have antlers, while males have a pair of simple, forked antlers with small ridges in front of the antler base.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_1156b289e7c50f79fd94886d179a7151.setContent(html_3494b4024ff0dcce0bfdd7b93939928e);
+            
+        
+
+        marker_b9d5d866e7ad593b15d26d5a21e718c4.bindPopup(popup_1156b289e7c50f79fd94886d179a7151)
+        ;
+
+        
+    
+    
+            var marker_d698d3d3560b02df15231a10a6b2559d = L.marker(
+                [24.240649489879683, 120.99072532930136],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_08acdae9c70ba2502cd177a1e089dfd4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_d698d3d3560b02df15231a10a6b2559d.setIcon(div_icon_08acdae9c70ba2502cd177a1e089dfd4);
+        
+    
+        var popup_722d3eda17bb2c529075f302de4b7859 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1f7b087f406e7e1effe86a7e799a7892 = $(`<div id="html_1f7b087f406e7e1effe86a7e799a7892" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣山羌 Formosan Muntjac</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/999994c175cba7471ab1a827effae27d.jpg?itok=5N6ISGXu" alt="臺灣山羌" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市和平區<br>     <p style='font-size: 16px;'>The Formosan Mmuntjac is one of three deer species native to Taiwan. It is a small member of the deer family, with a body length of about 47-70 cm, weighing around 5-12 kg.The back of its body is dark yellow, while the upper chest and sides are gray-brown. Its limbs are dark brown, and the sides of the head, neck, throat, and lower chest are yellowish-brown. Females do not have antlers, while males have a pair of simple, forked antlers with small ridges in front of the antler base.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_722d3eda17bb2c529075f302de4b7859.setContent(html_1f7b087f406e7e1effe86a7e799a7892);
+            
+        
+
+        marker_d698d3d3560b02df15231a10a6b2559d.bindPopup(popup_722d3eda17bb2c529075f302de4b7859)
+        ;
+
+        
+    
+    
+            var marker_473b724a67f623ff3276517dd38c28f3 = L.marker(
+                [23.61083584860659, 121.38892684472707],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_77d8fd7ea125c679c0939cde9d6323b0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_473b724a67f623ff3276517dd38c28f3.setIcon(div_icon_77d8fd7ea125c679c0939cde9d6323b0);
+        
+    
+        var popup_b04ef1929e3e61bd4203255b45842239 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_156db661fd808c453c0afca6af956454 = $(`<div id="html_156db661fd808c453c0afca6af956454" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣山羌 Formosan Muntjac</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/999994c175cba7471ab1a827effae27d.jpg?itok=5N6ISGXu" alt="臺灣山羌" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣光復鄉<br>     <p style='font-size: 16px;'>The Formosan Mmuntjac is one of three deer species native to Taiwan. It is a small member of the deer family, with a body length of about 47-70 cm, weighing around 5-12 kg.The back of its body is dark yellow, while the upper chest and sides are gray-brown. Its limbs are dark brown, and the sides of the head, neck, throat, and lower chest are yellowish-brown. Females do not have antlers, while males have a pair of simple, forked antlers with small ridges in front of the antler base.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_b04ef1929e3e61bd4203255b45842239.setContent(html_156db661fd808c453c0afca6af956454);
+            
+        
+
+        marker_473b724a67f623ff3276517dd38c28f3.bindPopup(popup_b04ef1929e3e61bd4203255b45842239)
+        ;
+
+        
+    
+    
+            var marker_6970ca8afa3f054ff16240d5e06d010a = L.marker(
+                [21.97041152792964, 120.8208225744688],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_3ffe782968dd92b82fa33d3b6e26eb81 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_6970ca8afa3f054ff16240d5e06d010a.setIcon(div_icon_3ffe782968dd92b82fa33d3b6e26eb81);
+        
+    
+        var popup_ab9704f1895a0004ab8ca4abe2115958 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0558ed229c8484ea583b42c8044ad97b = $(`<div id="html_0558ed229c8484ea583b42c8044ad97b" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣梅花鹿 Formosan Sika Deer</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/color_box_match/mcode/21a2e9c5e1ea043a6f72b6b9808d17fa.jpg?itok=l8NuGUmz" alt="臺灣梅花鹿" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 屏東縣恆春鎮<br>     <p style='font-size: 16px;'>Formosan sika deer is a subspecies of sika deer endemic to the island of Taiwan. Sika stand 90–120 cm at the shoulder, 155 cm in length, 43–68 kg in weight. The natural distribution of sika on Taiwan was in the woodlands from sea level up to about 300 meters elevation. Sika, like many deer, prefer areas of mixed forest, scrub, and open land.</p>     <b style='font-size: 16px; color: gray;'>國內紅皮書狀態:</b> 不適用<br> </div>`)[0];
+                popup_ab9704f1895a0004ab8ca4abe2115958.setContent(html_0558ed229c8484ea583b42c8044ad97b);
+            
+        
+
+        marker_6970ca8afa3f054ff16240d5e06d010a.bindPopup(popup_ab9704f1895a0004ab8ca4abe2115958)
+        ;
+
+        
+    
+    
+            var marker_2f10e4a4e4b82231e6b665257d04f33b = L.marker(
+                [21.985136482555657, 120.83743217157829],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_f0a727cd64d2d6618d9f4f707d215c26 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_2f10e4a4e4b82231e6b665257d04f33b.setIcon(div_icon_f0a727cd64d2d6618d9f4f707d215c26);
+        
+    
+        var popup_964e23aeb74afa044c3c8e91fd4d0115 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c722db79a4981c0040c408f1ad30547b = $(`<div id="html_c722db79a4981c0040c408f1ad30547b" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣梅花鹿 Formosan Sika Deer</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/color_box_match/mcode/21a2e9c5e1ea043a6f72b6b9808d17fa.jpg?itok=l8NuGUmz" alt="臺灣梅花鹿" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 屏東縣滿州鄉<br>     <p style='font-size: 16px;'>Formosan sika deer is a subspecies of sika deer endemic to the island of Taiwan. Sika stand 90–120 cm at the shoulder, 155 cm in length, 43–68 kg in weight. The natural distribution of sika on Taiwan was in the woodlands from sea level up to about 300 meters elevation. Sika, like many deer, prefer areas of mixed forest, scrub, and open land.</p>     <b style='font-size: 16px; color: gray;'>國內紅皮書狀態:</b> 不適用<br> </div>`)[0];
+                popup_964e23aeb74afa044c3c8e91fd4d0115.setContent(html_c722db79a4981c0040c408f1ad30547b);
+            
+        
+
+        marker_2f10e4a4e4b82231e6b665257d04f33b.bindPopup(popup_964e23aeb74afa044c3c8e91fd4d0115)
+        ;
+
+        
+    
+    
+            var marker_75807ff8c72aadac61ec22d15e600a06 = L.marker(
+                [24.178438223267555, 120.55190545573753],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_4c3ea661da8c1342148d4e64b103c269 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_75807ff8c72aadac61ec22d15e600a06.setIcon(div_icon_4c3ea661da8c1342148d4e64b103c269);
+        
+    
+        var popup_aaeaae221c0d8161da90771fb68c555a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1d09be55c8d892436412705e4e470122 = $(`<div id="html_1d09be55c8d892436412705e4e470122" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣梅花鹿 Formosan Sika Deer</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/color_box_match/mcode/21a2e9c5e1ea043a6f72b6b9808d17fa.jpg?itok=l8NuGUmz" alt="臺灣梅花鹿" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市龍井區<br>     <p style='font-size: 16px;'>Formosan sika deer is a subspecies of sika deer endemic to the island of Taiwan. Sika stand 90–120 cm at the shoulder, 155 cm in length, 43–68 kg in weight. The natural distribution of sika on Taiwan was in the woodlands from sea level up to about 300 meters elevation. Sika, like many deer, prefer areas of mixed forest, scrub, and open land.</p>     <b style='font-size: 16px; color: gray;'>國內紅皮書狀態:</b> 不適用<br> </div>`)[0];
+                popup_aaeaae221c0d8161da90771fb68c555a.setContent(html_1d09be55c8d892436412705e4e470122);
+            
+        
+
+        marker_75807ff8c72aadac61ec22d15e600a06.bindPopup(popup_aaeaae221c0d8161da90771fb68c555a)
+        ;
+
+        
+    
+    
+            var marker_f685b693d774fb2717b06198dfa7fac2 = L.marker(
+                [22.20903419873611, 120.80047117085402],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_e73a83932a923f4f1448dc1698f931b4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_f685b693d774fb2717b06198dfa7fac2.setIcon(div_icon_e73a83932a923f4f1448dc1698f931b4);
+        
+    
+        var popup_43e39895303299a58eb901aae196497f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_88081f459adbd26b01c752456dcfc6bf = $(`<div id="html_88081f459adbd26b01c752456dcfc6bf" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣梅花鹿 Formosan Sika Deer</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/color_box_match/mcode/21a2e9c5e1ea043a6f72b6b9808d17fa.jpg?itok=l8NuGUmz" alt="臺灣梅花鹿" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 屏東縣獅子鄉<br>     <p style='font-size: 16px;'>Formosan sika deer is a subspecies of sika deer endemic to the island of Taiwan. Sika stand 90–120 cm at the shoulder, 155 cm in length, 43–68 kg in weight. The natural distribution of sika on Taiwan was in the woodlands from sea level up to about 300 meters elevation. Sika, like many deer, prefer areas of mixed forest, scrub, and open land.</p>     <b style='font-size: 16px; color: gray;'>國內紅皮書狀態:</b> 不適用<br> </div>`)[0];
+                popup_43e39895303299a58eb901aae196497f.setContent(html_88081f459adbd26b01c752456dcfc6bf);
+            
+        
+
+        marker_f685b693d774fb2717b06198dfa7fac2.bindPopup(popup_43e39895303299a58eb901aae196497f)
+        ;
+
+        
+    
+    
+            var marker_df321ff94a4e0e20770aa66cb417b7c0 = L.marker(
+                [24.159923056167862, 121.29045656244737],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_03d935452a3b8df71a52a5b06786169c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc2d\u003c/div\u003e"});
+            marker_df321ff94a4e0e20770aa66cb417b7c0.setIcon(div_icon_03d935452a3b8df71a52a5b06786169c);
+        
+    
+        var popup_17af7a3b46f05fa3720870112f5953ea = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_35da4a26573acf67c7b44f120d7a3553 = $(`<div id="html_35da4a26573acf67c7b44f120d7a3553" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣森鼠 Formosan Field Mouse</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/fb331726220514856cbee66f8976da43.jpg?itok=64oBbV3K" alt="臺灣森鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣<br>     <p style='font-size: 16px;'>The Taiwan field mouse is found only in Taiwan. It is primarily distributed in the montane region between 1,400 and 3,000 m. They inhabit various habitat types, such as natural or planted forests, grasslands, farms, and campsites, and are omnivorous feeding on plants, insects and fungi.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_17af7a3b46f05fa3720870112f5953ea.setContent(html_35da4a26573acf67c7b44f120d7a3553);
+            
+        
+
+        marker_df321ff94a4e0e20770aa66cb417b7c0.bindPopup(popup_17af7a3b46f05fa3720870112f5953ea)
+        ;
+
+        
+    
+    
+            var marker_7699d215b473515e25bc147ccc87606d = L.marker(
+                [24.240445192688146, 121.24091680762442],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_f67de39453b68f7b3839aaf41de7af87 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc2d\u003c/div\u003e"});
+            marker_7699d215b473515e25bc147ccc87606d.setIcon(div_icon_f67de39453b68f7b3839aaf41de7af87);
+        
+    
+        var popup_d465829a6281a1b359911f43ab233d2b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4707d7f6846f56aac4a25974cb3afb18 = $(`<div id="html_4707d7f6846f56aac4a25974cb3afb18" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣森鼠 Formosan Field Mouse</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/fb331726220514856cbee66f8976da43.jpg?itok=64oBbV3K" alt="臺灣森鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市和平區<br>     <p style='font-size: 16px;'>The Taiwan field mouse is found only in Taiwan. It is primarily distributed in the montane region between 1,400 and 3,000 m. They inhabit various habitat types, such as natural or planted forests, grasslands, farms, and campsites, and are omnivorous feeding on plants, insects and fungi.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_d465829a6281a1b359911f43ab233d2b.setContent(html_4707d7f6846f56aac4a25974cb3afb18);
+            
+        
+
+        marker_7699d215b473515e25bc147ccc87606d.bindPopup(popup_d465829a6281a1b359911f43ab233d2b)
+        ;
+
+        
+    
+    
+            var marker_238a554c2df61d1353dba725b66d286e = L.marker(
+                [24.56936179163582, 121.39916946101192],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_a59ce1a3cb6e9e41e18fac27661fd760 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc2d\u003c/div\u003e"});
+            marker_238a554c2df61d1353dba725b66d286e.setIcon(div_icon_a59ce1a3cb6e9e41e18fac27661fd760);
+        
+    
+        var popup_a034a17d314fff3d4ba7e63242cd7334 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_cf2e1c7b0f2a6d004dad164f7361787f = $(`<div id="html_cf2e1c7b0f2a6d004dad164f7361787f" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣森鼠 Formosan Field Mouse</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/fb331726220514856cbee66f8976da43.jpg?itok=64oBbV3K" alt="臺灣森鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 新竹縣尖石鄉<br>     <p style='font-size: 16px;'>The Taiwan field mouse is found only in Taiwan. It is primarily distributed in the montane region between 1,400 and 3,000 m. They inhabit various habitat types, such as natural or planted forests, grasslands, farms, and campsites, and are omnivorous feeding on plants, insects and fungi.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_a034a17d314fff3d4ba7e63242cd7334.setContent(html_cf2e1c7b0f2a6d004dad164f7361787f);
+            
+        
+
+        marker_238a554c2df61d1353dba725b66d286e.bindPopup(popup_a034a17d314fff3d4ba7e63242cd7334)
+        ;
+
+        
+    
+    
+            var marker_f530e8a23b61199de14e2b417f7b0abf = L.marker(
+                [23.460553869120016, 120.85032718539162],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_2fdfa8274d027e6214d15b5d42992f29 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc2d\u003c/div\u003e"});
+            marker_f530e8a23b61199de14e2b417f7b0abf.setIcon(div_icon_2fdfa8274d027e6214d15b5d42992f29);
+        
+    
+        var popup_aa5550e372fe45125f1d71ecce09c1c3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c1747ba9d6f304b3290725951c63345a = $(`<div id="html_c1747ba9d6f304b3290725951c63345a" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣森鼠 Formosan Field Mouse</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/fb331726220514856cbee66f8976da43.jpg?itok=64oBbV3K" alt="臺灣森鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>The Taiwan field mouse is found only in Taiwan. It is primarily distributed in the montane region between 1,400 and 3,000 m. They inhabit various habitat types, such as natural or planted forests, grasslands, farms, and campsites, and are omnivorous feeding on plants, insects and fungi.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_aa5550e372fe45125f1d71ecce09c1c3.setContent(html_c1747ba9d6f304b3290725951c63345a);
+            
+        
+
+        marker_f530e8a23b61199de14e2b417f7b0abf.bindPopup(popup_aa5550e372fe45125f1d71ecce09c1c3)
+        ;
+
+        
+    
+    
+            var marker_b40dd3058e568b020c050a5f76c770c6 = L.marker(
+                [23.470915919344577, 120.82082938099097],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_942aff2d154dfc31caace02db1bb1d38 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_b40dd3058e568b020c050a5f76c770c6.setIcon(div_icon_942aff2d154dfc31caace02db1bb1d38);
+        
+    
+        var popup_bb850c0252b830761defdba60e2c38d3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_954fcb8830c630909f62f7fa7383ddef = $(`<div id="html_954fcb8830c630909f62f7fa7383ddef" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣水鹿 Formosan Sambar Deer</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/8c6a6f835b9d58ec88e0da97eae5de9b.jpg?itok=1gR-jAfr" alt="臺灣水鹿" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>Formosan sambar deer's main habitat is in the mountains of Taiwan woodland. Wild Taiwan sambar still exist, but the number is minimal. Sambar deer are Taiwan's largest herbivores, with a head and body length approximating 180 cm. They are also known as “four-eyed deer” because of their suborbital glands, which are situated just below their eyes. Its fur color changes with season to provide camouflage. It is yellowish-brown in the summer and dark brown in the winter.</p>     <b style='font-size: 16px; color: orange;'>國內紅皮書狀態:</b> 接近受脅（NT, Near Threatened）<br> </div>`)[0];
+                popup_bb850c0252b830761defdba60e2c38d3.setContent(html_954fcb8830c630909f62f7fa7383ddef);
+            
+        
+
+        marker_b40dd3058e568b020c050a5f76c770c6.bindPopup(popup_bb850c0252b830761defdba60e2c38d3)
+        ;
+
+        
+    
+    
+            var marker_e9ffd822e692c0761bc4cbb25b75eac0 = L.marker(
+                [23.46934324901597, 120.87987112360183],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_b27e051cdc3ddd22fe1c0b47c0899683 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_e9ffd822e692c0761bc4cbb25b75eac0.setIcon(div_icon_b27e051cdc3ddd22fe1c0b47c0899683);
+        
+    
+        var popup_6e18650784efd2f4b2d3cbe5fcfebf70 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_6c35234b3ee522ce4b1be5ed02f379f1 = $(`<div id="html_6c35234b3ee522ce4b1be5ed02f379f1" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣水鹿 Formosan Sambar Deer</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/8c6a6f835b9d58ec88e0da97eae5de9b.jpg?itok=1gR-jAfr" alt="臺灣水鹿" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 南投縣信義鄉<br>     <p style='font-size: 16px;'>Formosan sambar deer's main habitat is in the mountains of Taiwan woodland. Wild Taiwan sambar still exist, but the number is minimal. Sambar deer are Taiwan's largest herbivores, with a head and body length approximating 180 cm. They are also known as “four-eyed deer” because of their suborbital glands, which are situated just below their eyes. Its fur color changes with season to provide camouflage. It is yellowish-brown in the summer and dark brown in the winter.</p>     <b style='font-size: 16px; color: orange;'>國內紅皮書狀態:</b> 接近受脅（NT, Near Threatened）<br> </div>`)[0];
+                popup_6e18650784efd2f4b2d3cbe5fcfebf70.setContent(html_6c35234b3ee522ce4b1be5ed02f379f1);
+            
+        
+
+        marker_e9ffd822e692c0761bc4cbb25b75eac0.bindPopup(popup_6e18650784efd2f4b2d3cbe5fcfebf70)
+        ;
+
+        
+    
+    
+            var marker_da86bb3aad76f8e76662db1d2a4c5f90 = L.marker(
+                [23.349857552689265, 121.15970803005433],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_1bda337458ce4a205c6f51bb61f58a19 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_da86bb3aad76f8e76662db1d2a4c5f90.setIcon(div_icon_1bda337458ce4a205c6f51bb61f58a19);
+        
+    
+        var popup_5d72b92ae052621566d13be42bf84b1f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_5e382409ac29ee7dc4ff32cce5c789c4 = $(`<div id="html_5e382409ac29ee7dc4ff32cce5c789c4" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣水鹿 Formosan Sambar Deer</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/8c6a6f835b9d58ec88e0da97eae5de9b.jpg?itok=1gR-jAfr" alt="臺灣水鹿" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣卓溪鄉<br>     <p style='font-size: 16px;'>Formosan sambar deer's main habitat is in the mountains of Taiwan woodland. Wild Taiwan sambar still exist, but the number is minimal. Sambar deer are Taiwan's largest herbivores, with a head and body length approximating 180 cm. They are also known as “four-eyed deer” because of their suborbital glands, which are situated just below their eyes. Its fur color changes with season to provide camouflage. It is yellowish-brown in the summer and dark brown in the winter.</p>     <b style='font-size: 16px; color: orange;'>國內紅皮書狀態:</b> 接近受脅（NT, Near Threatened）<br> </div>`)[0];
+                popup_5d72b92ae052621566d13be42bf84b1f.setContent(html_5e382409ac29ee7dc4ff32cce5c789c4);
+            
+        
+
+        marker_da86bb3aad76f8e76662db1d2a4c5f90.bindPopup(popup_5d72b92ae052621566d13be42bf84b1f)
+        ;
+
+        
+    
+    
+            var marker_f15a83824e1bd825252cd81af788dae8 = L.marker(
+                [23.95084542669527, 120.84946277499668],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_2a8604033e4e0ef8c7bac0d508b7e31e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udd8c\u003c/div\u003e"});
+            marker_f15a83824e1bd825252cd81af788dae8.setIcon(div_icon_2a8604033e4e0ef8c7bac0d508b7e31e);
+        
+    
+        var popup_7689693482b20bd8d01e30fe806c1d90 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3789c6125d5c155791974a108a1019b1 = $(`<div id="html_3789c6125d5c155791974a108a1019b1" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣水鹿 Formosan Sambar Deer</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/8c6a6f835b9d58ec88e0da97eae5de9b.jpg?itok=1gR-jAfr" alt="臺灣水鹿" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 南投縣國姓鄉<br>     <p style='font-size: 16px;'>Formosan sambar deer's main habitat is in the mountains of Taiwan woodland. Wild Taiwan sambar still exist, but the number is minimal. Sambar deer are Taiwan's largest herbivores, with a head and body length approximating 180 cm. They are also known as “four-eyed deer” because of their suborbital glands, which are situated just below their eyes. Its fur color changes with season to provide camouflage. It is yellowish-brown in the summer and dark brown in the winter.</p>     <b style='font-size: 16px; color: orange;'>國內紅皮書狀態:</b> 接近受脅（NT, Near Threatened）<br> </div>`)[0];
+                popup_7689693482b20bd8d01e30fe806c1d90.setContent(html_3789c6125d5c155791974a108a1019b1);
+            
+        
+
+        marker_f15a83824e1bd825252cd81af788dae8.bindPopup(popup_7689693482b20bd8d01e30fe806c1d90)
+        ;
+
+        
+    
+    
+            var marker_6786b3e289e52fdbaae244cd0e4118dd = L.marker(
+                [23.470622855035092, 120.82034094393892],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_c714dbb110c6e970368fb5642319bec1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc12\u003c/div\u003e"});
+            marker_6786b3e289e52fdbaae244cd0e4118dd.setIcon(div_icon_c714dbb110c6e970368fb5642319bec1);
+        
+    
+        var popup_1445e67ad62d0c5cf75484ba082a63d4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fd30e39ce13a97a2cb10cedd13348e05 = $(`<div id="html_fd30e39ce13a97a2cb10cedd13348e05" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣獼猴 Formosan Rock Macaque</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/0478fab2b505a44b832e01efa8118815.jpg?itok=9nffwTO8" alt="臺灣獼猴" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>The Formosan rock macaque, also known as the Formosan rock monkey or Taiwanese macaque, is a macaque endemic to Taiwan, which has also been introduced to Japan. Formosan rock macaques are the only native primates living in Taiwan. 壽山 Shoushan, a hill in southern Taiwan’s Kaohsiung city, is their best-known habitat.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_1445e67ad62d0c5cf75484ba082a63d4.setContent(html_fd30e39ce13a97a2cb10cedd13348e05);
+            
+        
+
+        marker_6786b3e289e52fdbaae244cd0e4118dd.bindPopup(popup_1445e67ad62d0c5cf75484ba082a63d4)
+        ;
+
+        
+    
+    
+            var marker_5d401cccf6e963605c98fcde9270bd84 = L.marker(
+                [22.635965558629564, 120.27059581757011],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_41781b76481c6ce2c2640cd99087904d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc12\u003c/div\u003e"});
+            marker_5d401cccf6e963605c98fcde9270bd84.setIcon(div_icon_41781b76481c6ce2c2640cd99087904d);
+        
+    
+        var popup_e60cc33333ee83362073f2ab361ebb52 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_081b6795c8a86919c1d2b9f283a22c36 = $(`<div id="html_081b6795c8a86919c1d2b9f283a22c36" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣獼猴 Formosan Rock Macaque</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/0478fab2b505a44b832e01efa8118815.jpg?itok=9nffwTO8" alt="臺灣獼猴" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 高雄市鼓山區<br>     <p style='font-size: 16px;'>The Formosan rock macaque, also known as the Formosan rock monkey or Taiwanese macaque, is a macaque endemic to Taiwan, which has also been introduced to Japan. Formosan rock macaques are the only native primates living in Taiwan. 壽山 Shoushan, a hill in southern Taiwan’s Kaohsiung city, is their best-known habitat.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_e60cc33333ee83362073f2ab361ebb52.setContent(html_081b6795c8a86919c1d2b9f283a22c36);
+            
+        
+
+        marker_5d401cccf6e963605c98fcde9270bd84.bindPopup(popup_e60cc33333ee83362073f2ab361ebb52)
+        ;
+
+        
+    
+    
+            var marker_3de5bfefe4557a44984b1fb341fc4f43 = L.marker(
+                [24.199965459360524, 121.6591580962498],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_6034b7c20a24498690a1200b06593598 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc12\u003c/div\u003e"});
+            marker_3de5bfefe4557a44984b1fb341fc4f43.setIcon(div_icon_6034b7c20a24498690a1200b06593598);
+        
+    
+        var popup_e5db97a591acabcfb56e82355b241859 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f88f7a2354aa875b08f36c972735557d = $(`<div id="html_f88f7a2354aa875b08f36c972735557d" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣獼猴 Formosan Rock Macaque</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/0478fab2b505a44b832e01efa8118815.jpg?itok=9nffwTO8" alt="臺灣獼猴" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣秀林鄉<br>     <p style='font-size: 16px;'>The Formosan rock macaque, also known as the Formosan rock monkey or Taiwanese macaque, is a macaque endemic to Taiwan, which has also been introduced to Japan. Formosan rock macaques are the only native primates living in Taiwan. 壽山 Shoushan, a hill in southern Taiwan’s Kaohsiung city, is their best-known habitat.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_e5db97a591acabcfb56e82355b241859.setContent(html_f88f7a2354aa875b08f36c972735557d);
+            
+        
+
+        marker_3de5bfefe4557a44984b1fb341fc4f43.bindPopup(popup_e5db97a591acabcfb56e82355b241859)
+        ;
+
+        
+    
+    
+            var marker_4cbe46f4ff11173c21c96e8e10683c46 = L.marker(
+                [22.26048285532485, 120.8399699046191],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_cf7b021e4f52cb0936312536c001b977 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc12\u003c/div\u003e"});
+            marker_4cbe46f4ff11173c21c96e8e10683c46.setIcon(div_icon_cf7b021e4f52cb0936312536c001b977);
+        
+    
+        var popup_9f3e5e1bd55fedf19c848793d5d053d8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_2f955d3445b5a2d51269bc609e729045 = $(`<div id="html_2f955d3445b5a2d51269bc609e729045" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣獼猴 Formosan Rock Macaque</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/0478fab2b505a44b832e01efa8118815.jpg?itok=9nffwTO8" alt="臺灣獼猴" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台東縣達仁鄉<br>     <p style='font-size: 16px;'>The Formosan rock macaque, also known as the Formosan rock monkey or Taiwanese macaque, is a macaque endemic to Taiwan, which has also been introduced to Japan. Formosan rock macaques are the only native primates living in Taiwan. 壽山 Shoushan, a hill in southern Taiwan’s Kaohsiung city, is their best-known habitat.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_9f3e5e1bd55fedf19c848793d5d053d8.setContent(html_2f955d3445b5a2d51269bc609e729045);
+            
+        
+
+        marker_4cbe46f4ff11173c21c96e8e10683c46.bindPopup(popup_9f3e5e1bd55fedf19c848793d5d053d8)
+        ;
+
+        
+    
+    
+            var marker_4896025c65ea1964f3ed319feb3d0b12 = L.marker(
+                [24.31044922627042, 120.6416232826319],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_527bcfa89f1ff9accfd653307fbfb717 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc07\u003c/div\u003e"});
+            marker_4896025c65ea1964f3ed319feb3d0b12.setIcon(div_icon_527bcfa89f1ff9accfd653307fbfb717);
+        
+    
+        var popup_a03394a317ce6b43c40f1b523e5bc9c4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_73162d7a999253030b35e9768dcc0e17 = $(`<div id="html_73162d7a999253030b35e9768dcc0e17" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野兔 Formosan Hare</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/0a904c85cbfeec15fe1f2e1b98979c91.jpg?itok=hFyrAzzS" alt="臺灣野兔" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市外埔區<br>     <p style='font-size: 16px;'>Formosan Hares used to distribute from plains to the regions in altitude of 500 meters. However, nowadays both the plains and hills of Taiwan have been over-developed. The Formosan hares have lost their original natural habitat and moved into the mountains. Their population has been decreased.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_a03394a317ce6b43c40f1b523e5bc9c4.setContent(html_73162d7a999253030b35e9768dcc0e17);
+            
+        
+
+        marker_4896025c65ea1964f3ed319feb3d0b12.bindPopup(popup_a03394a317ce6b43c40f1b523e5bc9c4)
+        ;
+
+        
+    
+    
+            var marker_37ab8d7fdfe8d68eddd0e7e5c67be901 = L.marker(
+                [23.329414391950042, 120.68931194937907],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_d6b6b184e1c886e72704abb31c1cb018 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc07\u003c/div\u003e"});
+            marker_37ab8d7fdfe8d68eddd0e7e5c67be901.setIcon(div_icon_d6b6b184e1c886e72704abb31c1cb018);
+        
+    
+        var popup_950ac042d43509bdb63c869d416354de = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_6cd5bd6bcc67b046b2585adaf8c26e58 = $(`<div id="html_6cd5bd6bcc67b046b2585adaf8c26e58" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野兔 Formosan Hare</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/0a904c85cbfeec15fe1f2e1b98979c91.jpg?itok=hFyrAzzS" alt="臺灣野兔" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>Formosan Hares used to distribute from plains to the regions in altitude of 500 meters. However, nowadays both the plains and hills of Taiwan have been over-developed. The Formosan hares have lost their original natural habitat and moved into the mountains. Their population has been decreased.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_950ac042d43509bdb63c869d416354de.setContent(html_6cd5bd6bcc67b046b2585adaf8c26e58);
+            
+        
+
+        marker_37ab8d7fdfe8d68eddd0e7e5c67be901.bindPopup(popup_950ac042d43509bdb63c869d416354de)
+        ;
+
+        
+    
+    
+            var marker_8baca6600fdee74820d6697685066eff = L.marker(
+                [24.289671832095248, 120.65497187844278],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_791315d68eedd3ceaebabd0b5a8dfd91 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc07\u003c/div\u003e"});
+            marker_8baca6600fdee74820d6697685066eff.setIcon(div_icon_791315d68eedd3ceaebabd0b5a8dfd91);
+        
+    
+        var popup_6e66a267dc0908a25621e074fcb20716 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_591552d89b15f734e2a8080a262250e0 = $(`<div id="html_591552d89b15f734e2a8080a262250e0" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野兔 Formosan Hare</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/0a904c85cbfeec15fe1f2e1b98979c91.jpg?itok=hFyrAzzS" alt="臺灣野兔" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市神岡區<br>     <p style='font-size: 16px;'>Formosan Hares used to distribute from plains to the regions in altitude of 500 meters. However, nowadays both the plains and hills of Taiwan have been over-developed. The Formosan hares have lost their original natural habitat and moved into the mountains. Their population has been decreased.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_6e66a267dc0908a25621e074fcb20716.setContent(html_591552d89b15f734e2a8080a262250e0);
+            
+        
+
+        marker_8baca6600fdee74820d6697685066eff.bindPopup(popup_6e66a267dc0908a25621e074fcb20716)
+        ;
+
+        
+    
+    
+            var marker_67a74be7d7135c466d3a1878802788ee = L.marker(
+                [24.29167793154165, 120.88365674702608],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_0cb39f967fcef1ece4306dc552359a48 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc07\u003c/div\u003e"});
+            marker_67a74be7d7135c466d3a1878802788ee.setIcon(div_icon_0cb39f967fcef1ece4306dc552359a48);
+        
+    
+        var popup_909a8d18abe3a2857e7788a259c91149 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c39f01bf2cf886635647f8ac41a97920 = $(`<div id="html_c39f01bf2cf886635647f8ac41a97920" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野兔 Formosan Hare</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/0a904c85cbfeec15fe1f2e1b98979c91.jpg?itok=hFyrAzzS" alt="臺灣野兔" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市東勢區<br>     <p style='font-size: 16px;'>Formosan Hares used to distribute from plains to the regions in altitude of 500 meters. However, nowadays both the plains and hills of Taiwan have been over-developed. The Formosan hares have lost their original natural habitat and moved into the mountains. Their population has been decreased.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_909a8d18abe3a2857e7788a259c91149.setContent(html_c39f01bf2cf886635647f8ac41a97920);
+            
+        
+
+        marker_67a74be7d7135c466d3a1878802788ee.bindPopup(popup_909a8d18abe3a2857e7788a259c91149)
+        ;
+
+        
+    
+    
+            var marker_d6e44a8401c9a9025b95aa3f97afce9e = L.marker(
+                [23.469107797121616, 120.81966231742415],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_c0df34adc7233251030bc206e4a10186 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc10\u003c/div\u003e"});
+            marker_d6e44a8401c9a9025b95aa3f97afce9e.setIcon(div_icon_c0df34adc7233251030bc206e4a10186);
+        
+    
+        var popup_872d16d67739a24e81b0152c504957be = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3ec0b5c0adcabeceda10545b1fe46765 = $(`<div id="html_3ec0b5c0adcabeceda10545b1fe46765" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野山羊 Formosan Serow</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/5f80ea685b89871f9019e665cf62ceef.jpg?itok=S1QJO6Iq" alt="臺灣野山羊" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>The Formosan serow, also known as the Taiwan serow, is Taiwan's only known native bovid. It is widely distributed throughout the island's mountainous regions. This species is adapted to steep and rugged terrain, where its special hoofs enable it to move freely about rocky slopes and cliffs.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_872d16d67739a24e81b0152c504957be.setContent(html_3ec0b5c0adcabeceda10545b1fe46765);
+            
+        
+
+        marker_d6e44a8401c9a9025b95aa3f97afce9e.bindPopup(popup_872d16d67739a24e81b0152c504957be)
+        ;
+
+        
+    
+    
+            var marker_dafecee5389978552f6ce607eef63a93 = L.marker(
+                [24.209578658174518, 121.67905203607326],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_f0b69078ddc2671483c635ff695e1e82 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc10\u003c/div\u003e"});
+            marker_dafecee5389978552f6ce607eef63a93.setIcon(div_icon_f0b69078ddc2671483c635ff695e1e82);
+        
+    
+        var popup_d2cb765f8585e54b13173fb732ab2677 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a579ff6006b56806cdef688ae7ad47a1 = $(`<div id="html_a579ff6006b56806cdef688ae7ad47a1" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野山羊 Formosan Serow</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/5f80ea685b89871f9019e665cf62ceef.jpg?itok=S1QJO6Iq" alt="臺灣野山羊" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣秀林鄉<br>     <p style='font-size: 16px;'>The Formosan serow, also known as the Taiwan serow, is Taiwan's only known native bovid. It is widely distributed throughout the island's mountainous regions. This species is adapted to steep and rugged terrain, where its special hoofs enable it to move freely about rocky slopes and cliffs.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_d2cb765f8585e54b13173fb732ab2677.setContent(html_a579ff6006b56806cdef688ae7ad47a1);
+            
+        
+
+        marker_dafecee5389978552f6ce607eef63a93.bindPopup(popup_d2cb765f8585e54b13173fb732ab2677)
+        ;
+
+        
+    
+    
+            var marker_a92a6ae65e0129fa5d03dac15f6c0d54 = L.marker(
+                [23.470504673518167, 120.90093791093784],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_ed4d88703a72bff539b8b4064ddb66c9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc10\u003c/div\u003e"});
+            marker_a92a6ae65e0129fa5d03dac15f6c0d54.setIcon(div_icon_ed4d88703a72bff539b8b4064ddb66c9);
+        
+    
+        var popup_1012e3dfb9db9337110711175c44de6a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9941ea72d9f27289dba9eb8c46422542 = $(`<div id="html_9941ea72d9f27289dba9eb8c46422542" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野山羊 Formosan Serow</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/5f80ea685b89871f9019e665cf62ceef.jpg?itok=S1QJO6Iq" alt="臺灣野山羊" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 南投縣信義鄉<br>     <p style='font-size: 16px;'>The Formosan serow, also known as the Taiwan serow, is Taiwan's only known native bovid. It is widely distributed throughout the island's mountainous regions. This species is adapted to steep and rugged terrain, where its special hoofs enable it to move freely about rocky slopes and cliffs.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_1012e3dfb9db9337110711175c44de6a.setContent(html_9941ea72d9f27289dba9eb8c46422542);
+            
+        
+
+        marker_a92a6ae65e0129fa5d03dac15f6c0d54.bindPopup(popup_1012e3dfb9db9337110711175c44de6a)
+        ;
+
+        
+    
+    
+            var marker_fc44c05e7ebb55435f7d4ecebcc146a9 = L.marker(
+                [24.28991079957863, 120.99051362130689],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_e86c668e784d90ef13d52bf27902346d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc10\u003c/div\u003e"});
+            marker_fc44c05e7ebb55435f7d4ecebcc146a9.setIcon(div_icon_e86c668e784d90ef13d52bf27902346d);
+        
+    
+        var popup_4bd16ed6a1cc791375a974e0d0945115 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_125b81d46a68b1136212e4616c715803 = $(`<div id="html_125b81d46a68b1136212e4616c715803" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野山羊 Formosan Serow</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/5f80ea685b89871f9019e665cf62ceef.jpg?itok=S1QJO6Iq" alt="臺灣野山羊" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市和平區<br>     <p style='font-size: 16px;'>The Formosan serow, also known as the Taiwan serow, is Taiwan's only known native bovid. It is widely distributed throughout the island's mountainous regions. This species is adapted to steep and rugged terrain, where its special hoofs enable it to move freely about rocky slopes and cliffs.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_4bd16ed6a1cc791375a974e0d0945115.setContent(html_125b81d46a68b1136212e4616c715803);
+            
+        
+
+        marker_fc44c05e7ebb55435f7d4ecebcc146a9.bindPopup(popup_4bd16ed6a1cc791375a974e0d0945115)
+        ;
+
+        
+    
+    
+            var marker_88e7c7f2925fa975cf3a32090f4a4e56 = L.marker(
+                [23.45948790607349, 120.82933013087342],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_197ada4370eeba8d6a2bebc6f0349b2f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc17\u003c/div\u003e"});
+            marker_88e7c7f2925fa975cf3a32090f4a4e56.setIcon(div_icon_197ada4370eeba8d6a2bebc6f0349b2f);
+        
+    
+        var popup_f7ae72c9335e43d943695bea02e40fb0 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_6ab3304667831abef0b5ae171413e149 = $(`<div id="html_6ab3304667831abef0b5ae171413e149" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野豬 Formosan Wild Boar</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/color_box_match/mcode/3021a05fc1ba8ff0aa78f780af758918.jpg?itok=731P7llI" alt="臺灣野豬" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>The Taiwan wild boar is native to Taiwan. It is a unique subspecies that has adapted to live in the coastal plains of Taiwan and in the mountains 3,000 meters above sea level.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_f7ae72c9335e43d943695bea02e40fb0.setContent(html_6ab3304667831abef0b5ae171413e149);
+            
+        
+
+        marker_88e7c7f2925fa975cf3a32090f4a4e56.bindPopup(popup_f7ae72c9335e43d943695bea02e40fb0)
+        ;
+
+        
+    
+    
+            var marker_4a94c7ea5e86f86e25ad4568e7011d08 = L.marker(
+                [23.33611381282138, 121.19221283706209],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_85ac5ceee30c2d695f81e5dfdb3f6d48 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc17\u003c/div\u003e"});
+            marker_4a94c7ea5e86f86e25ad4568e7011d08.setIcon(div_icon_85ac5ceee30c2d695f81e5dfdb3f6d48);
+        
+    
+        var popup_fb09579ee7df142c5debd3e73dc5b51c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_2cdcb1ded5622526ef8cdba136452f58 = $(`<div id="html_2cdcb1ded5622526ef8cdba136452f58" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野豬 Formosan Wild Boar</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/color_box_match/mcode/3021a05fc1ba8ff0aa78f780af758918.jpg?itok=731P7llI" alt="臺灣野豬" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣卓溪鄉<br>     <p style='font-size: 16px;'>The Taiwan wild boar is native to Taiwan. It is a unique subspecies that has adapted to live in the coastal plains of Taiwan and in the mountains 3,000 meters above sea level.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_fb09579ee7df142c5debd3e73dc5b51c.setContent(html_2cdcb1ded5622526ef8cdba136452f58);
+            
+        
+
+        marker_4a94c7ea5e86f86e25ad4568e7011d08.bindPopup(popup_fb09579ee7df142c5debd3e73dc5b51c)
+        ;
+
+        
+    
+    
+            var marker_b6fbb6a605adf5dc99ff5ed766b162ad = L.marker(
+                [24.34963323697594, 121.30050184475108],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_5d2cbab5c5d86b035f05fbb84502dbe2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc17\u003c/div\u003e"});
+            marker_b6fbb6a605adf5dc99ff5ed766b162ad.setIcon(div_icon_5d2cbab5c5d86b035f05fbb84502dbe2);
+        
+    
+        var popup_a9e74d56b5c31928a2e25aa3187ff469 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ab6fd725091e358b888d765c2dc8c7df = $(`<div id="html_ab6fd725091e358b888d765c2dc8c7df" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野豬 Formosan Wild Boar</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/color_box_match/mcode/3021a05fc1ba8ff0aa78f780af758918.jpg?itok=731P7llI" alt="臺灣野豬" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市和平區<br>     <p style='font-size: 16px;'>The Taiwan wild boar is native to Taiwan. It is a unique subspecies that has adapted to live in the coastal plains of Taiwan and in the mountains 3,000 meters above sea level.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_a9e74d56b5c31928a2e25aa3187ff469.setContent(html_ab6fd725091e358b888d765c2dc8c7df);
+            
+        
+
+        marker_b6fbb6a605adf5dc99ff5ed766b162ad.bindPopup(popup_a9e74d56b5c31928a2e25aa3187ff469)
+        ;
+
+        
+    
+    
+            var marker_6e23c213022a2c5f0efb3aced8863b45 = L.marker(
+                [23.957232578741216, 120.85079106176774],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_d9620c96465c3432ead4d401fae41043 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc17\u003c/div\u003e"});
+            marker_6e23c213022a2c5f0efb3aced8863b45.setIcon(div_icon_d9620c96465c3432ead4d401fae41043);
+        
+    
+        var popup_c3c29ed217907db264a3c8e663197ebe = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_68d7f41f797a13d5370664380f001eea = $(`<div id="html_68d7f41f797a13d5370664380f001eea" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣野豬 Formosan Wild Boar</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/color_box_match/mcode/3021a05fc1ba8ff0aa78f780af758918.jpg?itok=731P7llI" alt="臺灣野豬" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 南投縣國姓鄉<br>     <p style='font-size: 16px;'>The Taiwan wild boar is native to Taiwan. It is a unique subspecies that has adapted to live in the coastal plains of Taiwan and in the mountains 3,000 meters above sea level.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_c3c29ed217907db264a3c8e663197ebe.setContent(html_68d7f41f797a13d5370664380f001eea);
+            
+        
+
+        marker_6e23c213022a2c5f0efb3aced8863b45.bindPopup(popup_c3c29ed217907db264a3c8e663197ebe)
+        ;
+
+        
+    
+    
+            var marker_43abc649e9ecfb7b32f082d230107d57 = L.marker(
+                [24.219151665899158, 120.95021302227795],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_e3e1fffc68312d655c401bcc59ffce1e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc3b\u003c/div\u003e"});
+            marker_43abc649e9ecfb7b32f082d230107d57.setIcon(div_icon_e3e1fffc68312d655c401bcc59ffce1e);
+        
+    
+        var popup_b53b91def6689ca43e93574212e3466e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_36193c9325fcc61d229174dd099c55cb = $(`<div id="html_36193c9325fcc61d229174dd099c55cb" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣黑熊 Formosan Black Bear</b><br>     <img src="https://www.taiwanbear.org.tw/admin/resource/images/f5cec9392d534b.jpeg" alt="臺灣黑熊" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市和平區<br>     <p style='font-size: 16px;'>The Formosan black bear is one of the seven subspecies of Ursus thibetanus formosanus endemic to Taiwan and is considered an endangered wild animal. At present, there are only about 200 to 600 of them left in Taiwan.</p>     <b style='font-size: 16px; color: darkred;'>國內紅皮書狀態:</b> 瀕危（EN, Endangered）<br> </div>`)[0];
+                popup_b53b91def6689ca43e93574212e3466e.setContent(html_36193c9325fcc61d229174dd099c55cb);
+            
+        
+
+        marker_43abc649e9ecfb7b32f082d230107d57.bindPopup(popup_b53b91def6689ca43e93574212e3466e)
+        ;
+
+        
+    
+    
+            var marker_f803dce493501a7b48774cbe44c71abf = L.marker(
+                [24.350944981415168, 120.98939380296187],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_c7bb7bb3293c89d58bc81ddc867f27a5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc3b\u003c/div\u003e"});
+            marker_f803dce493501a7b48774cbe44c71abf.setIcon(div_icon_c7bb7bb3293c89d58bc81ddc867f27a5);
+        
+    
+        var popup_4b148c468f386385caf1aadfa2448f26 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7fec64f64c7ee6106ba69a02c0dae854 = $(`<div id="html_7fec64f64c7ee6106ba69a02c0dae854" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣黑熊 Formosan Black Bear</b><br>     <img src="https://www.taiwanbear.org.tw/admin/resource/images/f5cec9392d534b.jpeg" alt="臺灣黑熊" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 苗栗縣泰安鄉<br>     <p style='font-size: 16px;'>The Formosan black bear is one of the seven subspecies of Ursus thibetanus formosanus endemic to Taiwan and is considered an endangered wild animal. At present, there are only about 200 to 600 of them left in Taiwan.</p>     <b style='font-size: 16px; color: darkred;'>國內紅皮書狀態:</b> 瀕危（EN, Endangered）<br> </div>`)[0];
+                popup_4b148c468f386385caf1aadfa2448f26.setContent(html_7fec64f64c7ee6106ba69a02c0dae854);
+            
+        
+
+        marker_f803dce493501a7b48774cbe44c71abf.bindPopup(popup_4b148c468f386385caf1aadfa2448f26)
+        ;
+
+        
+    
+    
+            var marker_e48ddc383eec0b5939cc66f2a194bfc6 = L.marker(
+                [23.350569159277754, 121.19068913192756],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_526f25b206e22ddce006f6f747198035 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc3b\u003c/div\u003e"});
+            marker_e48ddc383eec0b5939cc66f2a194bfc6.setIcon(div_icon_526f25b206e22ddce006f6f747198035);
+        
+    
+        var popup_2b3274245842fde110427bf55acd45f6 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e31e6105df70a9f874929c470bb0f7b1 = $(`<div id="html_e31e6105df70a9f874929c470bb0f7b1" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣黑熊 Formosan Black Bear</b><br>     <img src="https://www.taiwanbear.org.tw/admin/resource/images/f5cec9392d534b.jpeg" alt="臺灣黑熊" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣卓溪鄉<br>     <p style='font-size: 16px;'>The Formosan black bear is one of the seven subspecies of Ursus thibetanus formosanus endemic to Taiwan and is considered an endangered wild animal. At present, there are only about 200 to 600 of them left in Taiwan.</p>     <b style='font-size: 16px; color: darkred;'>國內紅皮書狀態:</b> 瀕危（EN, Endangered）<br> </div>`)[0];
+                popup_2b3274245842fde110427bf55acd45f6.setContent(html_e31e6105df70a9f874929c470bb0f7b1);
+            
+        
+
+        marker_e48ddc383eec0b5939cc66f2a194bfc6.bindPopup(popup_2b3274245842fde110427bf55acd45f6)
+        ;
+
+        
+    
+    
+            var marker_11522a661028850221ad91e28ce61584 = L.marker(
+                [23.41911995722865, 120.82070902466053],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_a0da424c9a05b0756185ba6dbcd6ff1b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc3b\u003c/div\u003e"});
+            marker_11522a661028850221ad91e28ce61584.setIcon(div_icon_a0da424c9a05b0756185ba6dbcd6ff1b);
+        
+    
+        var popup_fe8babb8c67c1accbf0616b7c7ff60bc = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_31a22b80f9b6e677ee3d6d5b6409efb3 = $(`<div id="html_31a22b80f9b6e677ee3d6d5b6409efb3" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>臺灣黑熊 Formosan Black Bear</b><br>     <img src="https://www.taiwanbear.org.tw/admin/resource/images/f5cec9392d534b.jpeg" alt="臺灣黑熊" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>The Formosan black bear is one of the seven subspecies of Ursus thibetanus formosanus endemic to Taiwan and is considered an endangered wild animal. At present, there are only about 200 to 600 of them left in Taiwan.</p>     <b style='font-size: 16px; color: darkred;'>國內紅皮書狀態:</b> 瀕危（EN, Endangered）<br> </div>`)[0];
+                popup_fe8babb8c67c1accbf0616b7c7ff60bc.setContent(html_31a22b80f9b6e677ee3d6d5b6409efb3);
+            
+        
+
+        marker_11522a661028850221ad91e28ce61584.bindPopup(popup_fe8babb8c67c1accbf0616b7c7ff60bc)
+        ;
+
+        
+    
+    
+            var marker_aeb8f201cc064aabc4cf25f080c0415c = L.marker(
+                [23.430262449142372, 120.74907035065387],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_c3b4b81dac97903df1b9a0ae2b62d48e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc3f\ufe0f\u003c/div\u003e"});
+            marker_aeb8f201cc064aabc4cf25f080c0415c.setIcon(div_icon_c3b4b81dac97903df1b9a0ae2b62d48e);
+        
+    
+        var popup_4ade4c4f69b41e171dd1e83360fc541b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8580980400589e7c7367d308409bfdf9 = $(`<div id="html_8580980400589e7c7367d308409bfdf9" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>赤腹松鼠 Red-Bellied Tree Squirrel</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/d6feda4f61cf5cd4e3947e2b59769606.jpg?itok=7V5XaDtx" alt="赤腹松鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>Pallas's squirrel, or Red-Bellied Tree Squirrel, is found throughout much of southeastern Asia. s a medium-sized tree squirrel, with a head-body length of 16 to 28 cm, and a tail 11 to 26 cm in length.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_4ade4c4f69b41e171dd1e83360fc541b.setContent(html_8580980400589e7c7367d308409bfdf9);
+            
+        
+
+        marker_aeb8f201cc064aabc4cf25f080c0415c.bindPopup(popup_4ade4c4f69b41e171dd1e83360fc541b)
+        ;
+
+        
+    
+    
+            var marker_5c6460f8ebf1d53dc4d1a13bcd503d67 = L.marker(
+                [22.634788223574812, 120.26558531681339],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_fbf0270fcb6b04bdf804c1b5cff48835 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc3f\ufe0f\u003c/div\u003e"});
+            marker_5c6460f8ebf1d53dc4d1a13bcd503d67.setIcon(div_icon_fbf0270fcb6b04bdf804c1b5cff48835);
+        
+    
+        var popup_44a0d41a75b86a2dacac4f4180711e97 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_bd4898edd7d791398d52cbd3bd855bed = $(`<div id="html_bd4898edd7d791398d52cbd3bd855bed" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>赤腹松鼠 Red-Bellied Tree Squirrel</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/d6feda4f61cf5cd4e3947e2b59769606.jpg?itok=7V5XaDtx" alt="赤腹松鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 高雄市鼓山區<br>     <p style='font-size: 16px;'>Pallas's squirrel, or Red-Bellied Tree Squirrel, is found throughout much of southeastern Asia. s a medium-sized tree squirrel, with a head-body length of 16 to 28 cm, and a tail 11 to 26 cm in length.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_44a0d41a75b86a2dacac4f4180711e97.setContent(html_bd4898edd7d791398d52cbd3bd855bed);
+            
+        
+
+        marker_5c6460f8ebf1d53dc4d1a13bcd503d67.bindPopup(popup_44a0d41a75b86a2dacac4f4180711e97)
+        ;
+
+        
+    
+    
+            var marker_2112cff650c3538338421afb1522fe26 = L.marker(
+                [24.439081573785778, 120.74932895066281],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_9589bec116cdcae49e3ce0444516083e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc3f\ufe0f\u003c/div\u003e"});
+            marker_2112cff650c3538338421afb1522fe26.setIcon(div_icon_9589bec116cdcae49e3ce0444516083e);
+        
+    
+        var popup_e55e90c171ccd43fa7e373e0124167bd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b84e7aa0278d34a60e34fa25a73e9f58 = $(`<div id="html_b84e7aa0278d34a60e34fa25a73e9f58" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>赤腹松鼠 Red-Bellied Tree Squirrel</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/d6feda4f61cf5cd4e3947e2b59769606.jpg?itok=7V5XaDtx" alt="赤腹松鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 苗栗縣通霄鎮<br>     <p style='font-size: 16px;'>Pallas's squirrel, or Red-Bellied Tree Squirrel, is found throughout much of southeastern Asia. s a medium-sized tree squirrel, with a head-body length of 16 to 28 cm, and a tail 11 to 26 cm in length.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_e55e90c171ccd43fa7e373e0124167bd.setContent(html_b84e7aa0278d34a60e34fa25a73e9f58);
+            
+        
+
+        marker_2112cff650c3538338421afb1522fe26.bindPopup(popup_e55e90c171ccd43fa7e373e0124167bd)
+        ;
+
+        
+    
+    
+            var marker_a4d9258b6f4aaaeda013fa765b4bb253 = L.marker(
+                [24.802639581688748, 121.16986053407105],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_30b5f227a80beeec3fec54c2c9547fc1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc3f\ufe0f\u003c/div\u003e"});
+            marker_a4d9258b6f4aaaeda013fa765b4bb253.setIcon(div_icon_30b5f227a80beeec3fec54c2c9547fc1);
+        
+    
+        var popup_35e45a1b9705ad69fc2fb1976b15bcc5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_101de162ad756ae0581468da190a3585 = $(`<div id="html_101de162ad756ae0581468da190a3585" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>赤腹松鼠 Red-Bellied Tree Squirrel</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/d6feda4f61cf5cd4e3947e2b59769606.jpg?itok=7V5XaDtx" alt="赤腹松鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 新竹縣關西鎮<br>     <p style='font-size: 16px;'>Pallas's squirrel, or Red-Bellied Tree Squirrel, is found throughout much of southeastern Asia. s a medium-sized tree squirrel, with a head-body length of 16 to 28 cm, and a tail 11 to 26 cm in length.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_35e45a1b9705ad69fc2fb1976b15bcc5.setContent(html_101de162ad756ae0581468da190a3585);
+            
+        
+
+        marker_a4d9258b6f4aaaeda013fa765b4bb253.bindPopup(popup_35e45a1b9705ad69fc2fb1976b15bcc5)
+        ;
+
+        
+    
+    
+            var marker_9ea36a4340bd1526cd926e853f443291 = L.marker(
+                [24.249656235027334, 121.24084096615032],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_3186d578bf021bbea82b33361fc25cda = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc01\u003c/div\u003e"});
+            marker_9ea36a4340bd1526cd926e853f443291.setIcon(div_icon_3186d578bf021bbea82b33361fc25cda);
+        
+    
+        var popup_fff756b4e8e31ccd47c29e592168c26a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_10f11ef91bc92a0e7a66d2b84710c3fe = $(`<div id="html_10f11ef91bc92a0e7a66d2b84710c3fe" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>高山白腹鼠 Formosan White-Bellied Rat</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/3c6473ed423777965cb64e09e0cbd9ad.jpg?itok=wfFO_OwR" alt="高山白腹鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 台中市和平區<br>     <p style='font-size: 16px;'>The Formosan white-bellied rat, scientifically known as Niviventer culturatus, is a species of rodent endemic to Taiwan.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_fff756b4e8e31ccd47c29e592168c26a.setContent(html_10f11ef91bc92a0e7a66d2b84710c3fe);
+            
+        
+
+        marker_9ea36a4340bd1526cd926e853f443291.bindPopup(popup_fff756b4e8e31ccd47c29e592168c26a)
+        ;
+
+        
+    
+    
+            var marker_a1ac8f21edae9059e3037ca6f458abeb = L.marker(
+                [24.159329084431327, 121.29023033219426],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_d41765dd5ba4f47e659ddc5c70fddbe7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc01\u003c/div\u003e"});
+            marker_a1ac8f21edae9059e3037ca6f458abeb.setIcon(div_icon_d41765dd5ba4f47e659ddc5c70fddbe7);
+        
+    
+        var popup_633a7cb33e11efb5051e49727f7c51bd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b2bef12396de1e6c7dfb6bda7f190461 = $(`<div id="html_b2bef12396de1e6c7dfb6bda7f190461" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>高山白腹鼠 Formosan White-Bellied Rat</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/3c6473ed423777965cb64e09e0cbd9ad.jpg?itok=wfFO_OwR" alt="高山白腹鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣<br>     <p style='font-size: 16px;'>The Formosan white-bellied rat, scientifically known as Niviventer culturatus, is a species of rodent endemic to Taiwan.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_633a7cb33e11efb5051e49727f7c51bd.setContent(html_b2bef12396de1e6c7dfb6bda7f190461);
+            
+        
+
+        marker_a1ac8f21edae9059e3037ca6f458abeb.bindPopup(popup_633a7cb33e11efb5051e49727f7c51bd)
+        ;
+
+        
+    
+    
+            var marker_8797e712cfcc27fda25c1384676f3894 = L.marker(
+                [23.460676436227537, 120.85039285938156],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_0ad13d21c7c7e11b65f8d6daaafad4fe = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc01\u003c/div\u003e"});
+            marker_8797e712cfcc27fda25c1384676f3894.setIcon(div_icon_0ad13d21c7c7e11b65f8d6daaafad4fe);
+        
+    
+        var popup_5c5d7f7c980df526725b5f0b86b57fcc = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_233c6572d5a22d7547a94554ccaad91c = $(`<div id="html_233c6572d5a22d7547a94554ccaad91c" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>高山白腹鼠 Formosan White-Bellied Rat</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/3c6473ed423777965cb64e09e0cbd9ad.jpg?itok=wfFO_OwR" alt="高山白腹鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>The Formosan white-bellied rat, scientifically known as Niviventer culturatus, is a species of rodent endemic to Taiwan.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_5c5d7f7c980df526725b5f0b86b57fcc.setContent(html_233c6572d5a22d7547a94554ccaad91c);
+            
+        
+
+        marker_8797e712cfcc27fda25c1384676f3894.bindPopup(popup_5c5d7f7c980df526725b5f0b86b57fcc)
+        ;
+
+        
+    
+    
+            var marker_2d1d31ef5bba4ab8bddfdccaa5a6c18d = L.marker(
+                [24.57091093951092, 121.39966756704422],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_091e47a9a38ecb323777ea6b9057f1eb = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc01\u003c/div\u003e"});
+            marker_2d1d31ef5bba4ab8bddfdccaa5a6c18d.setIcon(div_icon_091e47a9a38ecb323777ea6b9057f1eb);
+        
+    
+        var popup_8bfc7bd0e7f1763bffc0145d4188edd8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_af8f69d9ee85eb4107762020b4ea0b57 = $(`<div id="html_af8f69d9ee85eb4107762020b4ea0b57" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>高山白腹鼠 Formosan White-Bellied Rat</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/3c6473ed423777965cb64e09e0cbd9ad.jpg?itok=wfFO_OwR" alt="高山白腹鼠" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 新竹縣尖石鄉<br>     <p style='font-size: 16px;'>The Formosan white-bellied rat, scientifically known as Niviventer culturatus, is a species of rodent endemic to Taiwan.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_8bfc7bd0e7f1763bffc0145d4188edd8.setContent(html_af8f69d9ee85eb4107762020b4ea0b57);
+            
+        
+
+        marker_2d1d31ef5bba4ab8bddfdccaa5a6c18d.bindPopup(popup_8bfc7bd0e7f1763bffc0145d4188edd8)
+        ;
+
+        
+    
+    
+            var marker_af775a60bd54e2f54bc583c3c79e78dd = L.marker(
+                [22.21952862119639, 120.79920479444876],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_464e79bf4964f680e380c9e734e07bcb = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udda6\u003c/div\u003e"});
+            marker_af775a60bd54e2f54bc583c3c79e78dd.setIcon(div_icon_464e79bf4964f680e380c9e734e07bcb);
+        
+    
+        var popup_13e5b972d53eefa02740754af9c437c6 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_83f5c1f5f5006e8f00938328ac27632d = $(`<div id="html_83f5c1f5f5006e8f00938328ac27632d" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>黃喉貂 Formosan Yellow-Throated Marten</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/25597e4f6f3a811fe0b1ff56d7eca035.jpg?itok=m39APp7N" alt="黃喉貂" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 屏東縣獅子鄉<br>     <p style='font-size: 16px;'>The Formosan yellow-throated marten is a yellow and brown short-haired omnivore dwelling in mountain forests below 2,000 meters, though a few have settled at 3,850 meters in the woods near the North Peak Weather Station on 玉山 Yushan. They look cute and small, but their claws and teeth make them deadly hunters, occasionally preying on mammals larger than they are.</p>     <b style='font-size: 16px; color: red;'>國內紅皮書狀態:</b> 易危（VU, Vulnerable）<br> </div>`)[0];
+                popup_13e5b972d53eefa02740754af9c437c6.setContent(html_83f5c1f5f5006e8f00938328ac27632d);
+            
+        
+
+        marker_af775a60bd54e2f54bc583c3c79e78dd.bindPopup(popup_13e5b972d53eefa02740754af9c437c6)
+        ;
+
+        
+    
+    
+            var marker_33c5f921b3cbaebd7e4cba4da213a871 = L.marker(
+                [23.469164915013092, 120.88927419804106],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_bc14e2e877f8fde2c47495f4750ebffb = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udda6\u003c/div\u003e"});
+            marker_33c5f921b3cbaebd7e4cba4da213a871.setIcon(div_icon_bc14e2e877f8fde2c47495f4750ebffb);
+        
+    
+        var popup_593483096968c5af0f856de17684abfd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7dfdbf8e5fa8107c04e2b74cae50913a = $(`<div id="html_7dfdbf8e5fa8107c04e2b74cae50913a" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>黃喉貂 Formosan Yellow-Throated Marten</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/25597e4f6f3a811fe0b1ff56d7eca035.jpg?itok=m39APp7N" alt="黃喉貂" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>The Formosan yellow-throated marten is a yellow and brown short-haired omnivore dwelling in mountain forests below 2,000 meters, though a few have settled at 3,850 meters in the woods near the North Peak Weather Station on 玉山 Yushan. They look cute and small, but their claws and teeth make them deadly hunters, occasionally preying on mammals larger than they are.</p>     <b style='font-size: 16px; color: red;'>國內紅皮書狀態:</b> 易危（VU, Vulnerable）<br> </div>`)[0];
+                popup_593483096968c5af0f856de17684abfd.setContent(html_7dfdbf8e5fa8107c04e2b74cae50913a);
+            
+        
+
+        marker_33c5f921b3cbaebd7e4cba4da213a871.bindPopup(popup_593483096968c5af0f856de17684abfd)
+        ;
+
+        
+    
+    
+            var marker_9a0c078409867fc67ffb8f74833bdc27 = L.marker(
+                [23.479054238717094, 120.89087073645035],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_89aed0b90537692ec470e0f372e12d3d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udda6\u003c/div\u003e"});
+            marker_9a0c078409867fc67ffb8f74833bdc27.setIcon(div_icon_89aed0b90537692ec470e0f372e12d3d);
+        
+    
+        var popup_941f7e707b2f96403e38dcf542f0b6a8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_43b2e6d7b37523e13ed001ccea0250fd = $(`<div id="html_43b2e6d7b37523e13ed001ccea0250fd" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>黃喉貂 Formosan Yellow-Throated Marten</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/25597e4f6f3a811fe0b1ff56d7eca035.jpg?itok=m39APp7N" alt="黃喉貂" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 南投縣信義鄉<br>     <p style='font-size: 16px;'>The Formosan yellow-throated marten is a yellow and brown short-haired omnivore dwelling in mountain forests below 2,000 meters, though a few have settled at 3,850 meters in the woods near the North Peak Weather Station on 玉山 Yushan. They look cute and small, but their claws and teeth make them deadly hunters, occasionally preying on mammals larger than they are.</p>     <b style='font-size: 16px; color: red;'>國內紅皮書狀態:</b> 易危（VU, Vulnerable）<br> </div>`)[0];
+                popup_941f7e707b2f96403e38dcf542f0b6a8.setContent(html_43b2e6d7b37523e13ed001ccea0250fd);
+            
+        
+
+        marker_9a0c078409867fc67ffb8f74833bdc27.bindPopup(popup_941f7e707b2f96403e38dcf542f0b6a8)
+        ;
+
+        
+    
+    
+            var marker_4771f4b66d00fd209352f21f811baafd = L.marker(
+                [23.360527598157923, 121.16087891802466],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_bb1dc5f7f3c21e52dd272a835ce1e77e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83e\udda6\u003c/div\u003e"});
+            marker_4771f4b66d00fd209352f21f811baafd.setIcon(div_icon_bb1dc5f7f3c21e52dd272a835ce1e77e);
+        
+    
+        var popup_06e0e5101ecb5a2169aa01e3c93ff66f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_adb78e232e18311b9449e13c1225d584 = $(`<div id="html_adb78e232e18311b9449e13c1225d584" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>黃喉貂 Formosan Yellow-Throated Marten</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/25597e4f6f3a811fe0b1ff56d7eca035.jpg?itok=m39APp7N" alt="黃喉貂" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 花蓮縣卓溪鄉<br>     <p style='font-size: 16px;'>The Formosan yellow-throated marten is a yellow and brown short-haired omnivore dwelling in mountain forests below 2,000 meters, though a few have settled at 3,850 meters in the woods near the North Peak Weather Station on 玉山 Yushan. They look cute and small, but their claws and teeth make them deadly hunters, occasionally preying on mammals larger than they are.</p>     <b style='font-size: 16px; color: red;'>國內紅皮書狀態:</b> 易危（VU, Vulnerable）<br> </div>`)[0];
+                popup_06e0e5101ecb5a2169aa01e3c93ff66f.setContent(html_adb78e232e18311b9449e13c1225d584);
+            
+        
+
+        marker_4771f4b66d00fd209352f21f811baafd.bindPopup(popup_06e0e5101ecb5a2169aa01e3c93ff66f)
+        ;
+
+        
+    
+    
+            var marker_a358879f0c3daaff4f28e57af0b7e583 = L.marker(
+                [24.528883292631434, 120.73017665112864],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_78f30c544c4b07b7e324530c7f4a9192 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc00\u003c/div\u003e"});
+            marker_a358879f0c3daaff4f28e57af0b7e583.setIcon(div_icon_78f30c544c4b07b7e324530c7f4a9192);
+        
+    
+        var popup_a39da8a91892ac041502f5293036dfef = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_bddc2db493e54e8105cc0b091ce64310 = $(`<div id="html_bddc2db493e54e8105cc0b091ce64310" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>鼬獾 Formosan Ferret-Badger</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/7fae8db90adeb2b32cbe999d14f246e9.jpg?itok=7AKXHDLF" alt="鼬獾" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 苗栗縣通霄鎮<br>     <p style='font-size: 16px;'>The Formosan ferret-badger, endemic to Taiwan, is a distinct species, not a subspecies of the Chinese ferret-badger, despite sharing badger-like features like short legs, broad paws, and long claws for digging.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_a39da8a91892ac041502f5293036dfef.setContent(html_bddc2db493e54e8105cc0b091ce64310);
+            
+        
+
+        marker_a358879f0c3daaff4f28e57af0b7e583.bindPopup(popup_a39da8a91892ac041502f5293036dfef)
+        ;
+
+        
+    
+    
+            var marker_83c5a3eaed722124832d1030e3f2690b = L.marker(
+                [23.54117585954548, 120.49947080831],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_eb3650e8d9c34b2aca3f6cde682caa57 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc00\u003c/div\u003e"});
+            marker_83c5a3eaed722124832d1030e3f2690b.setIcon(div_icon_eb3650e8d9c34b2aca3f6cde682caa57);
+        
+    
+        var popup_a97b0ea48464ca2643b65a4a490ceacb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_44027974de9de7b1ebad1b659159fe8b = $(`<div id="html_44027974de9de7b1ebad1b659159fe8b" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>鼬獾 Formosan Ferret-Badger</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/7fae8db90adeb2b32cbe999d14f246e9.jpg?itok=7AKXHDLF" alt="鼬獾" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣民雄鄉<br>     <p style='font-size: 16px;'>The Formosan ferret-badger, endemic to Taiwan, is a distinct species, not a subspecies of the Chinese ferret-badger, despite sharing badger-like features like short legs, broad paws, and long claws for digging.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_a97b0ea48464ca2643b65a4a490ceacb.setContent(html_44027974de9de7b1ebad1b659159fe8b);
+            
+        
+
+        marker_83c5a3eaed722124832d1030e3f2690b.bindPopup(popup_a97b0ea48464ca2643b65a4a490ceacb)
+        ;
+
+        
+    
+    
+            var marker_9d96be406386598f8723279238d270a9 = L.marker(
+                [23.599658274249816, 120.73078220011172],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_e1cc95b147fd750819c55415d970c105 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc00\u003c/div\u003e"});
+            marker_9d96be406386598f8723279238d270a9.setIcon(div_icon_e1cc95b147fd750819c55415d970c105);
+        
+    
+        var popup_ced5b140605a8ed98e520ca8e1170a30 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3cd398ae96cfb3a5af12db42bbe192a7 = $(`<div id="html_3cd398ae96cfb3a5af12db42bbe192a7" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>鼬獾 Formosan Ferret-Badger</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/7fae8db90adeb2b32cbe999d14f246e9.jpg?itok=7AKXHDLF" alt="鼬獾" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 嘉義縣阿里山鄉<br>     <p style='font-size: 16px;'>The Formosan ferret-badger, endemic to Taiwan, is a distinct species, not a subspecies of the Chinese ferret-badger, despite sharing badger-like features like short legs, broad paws, and long claws for digging.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_ced5b140605a8ed98e520ca8e1170a30.setContent(html_3cd398ae96cfb3a5af12db42bbe192a7);
+            
+        
+
+        marker_9d96be406386598f8723279238d270a9.bindPopup(popup_ced5b140605a8ed98e520ca8e1170a30)
+        ;
+
+        
+    
+    
+            var marker_456f24c35e07957671588ae80ac28b25 = L.marker(
+                [24.75800906562273, 120.9720642580951],
+                {}
+            ).addTo(map_2d3360841155f945128140263bfc29cd);
+        
+    
+            var div_icon_ba94d0bda99bebe79800953228280ffd = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 24px\u0027\u003e\ud83d\udc00\u003c/div\u003e"});
+            marker_456f24c35e07957671588ae80ac28b25.setIcon(div_icon_ba94d0bda99bebe79800953228280ffd);
+        
+    
+        var popup_cf0d6daee75eba36b9a09cd0706af7fa = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9107021c7f11ffaa8329b5c88df743aa = $(`<div id="html_9107021c7f11ffaa8329b5c88df743aa" style="width: 100.0%; height: 100.0%;">     <b style='font-size: 24px;'>鼬獾 Formosan Ferret-Badger</b><br>     <img src="https://taieol.tw/files/muse_taieol/muse_styles/w1024/mcode/7fae8db90adeb2b32cbe999d14f246e9.jpg?itok=7AKXHDLF" alt="鼬獾" style="width: 100%; height: auto; border-radius: 14px; margin:18px 0;"><br>     <b style='font-size: 16px;'>行政區:</b> 新竹縣寶山鄉<br>     <p style='font-size: 16px;'>The Formosan ferret-badger, endemic to Taiwan, is a distinct species, not a subspecies of the Chinese ferret-badger, despite sharing badger-like features like short legs, broad paws, and long claws for digging.</p>     <b style='font-size: 16px; color: green;'>國內紅皮書狀態:</b> 暫無危機（LC, Least Concern）<br> </div>`)[0];
+                popup_cf0d6daee75eba36b9a09cd0706af7fa.setContent(html_9107021c7f11ffaa8329b5c88df743aa);
+            
+        
+
+        marker_456f24c35e07957671588ae80ac28b25.bindPopup(popup_cf0d6daee75eba36b9a09cd0706af7fa)
+        ;
+
+        
+    
+</script>
+</html>
